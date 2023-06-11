@@ -1,0 +1,38 @@
+.techstack {
+  padding: 2.4rem 0;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  animation: moveContainer 1s ease-in-out 0.5s forwards;
+}
+
+.techstack h2 {
+  position: relative;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 5px #000;
+}
+
+.techstack ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.techstack ul > * {
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes moveContainer {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(auto);
+  }
+}

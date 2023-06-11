@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/site.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<script src="./src/app.js" defer></script>
+	<title>Borislav.Godumov/DEV</title>
+</head>
+
+<body>
+	<div class="site">
+
+		<header class="site-header">
+			<div class="site-branding">
+				<ion-icon name="code-slash-outline" class="site-nav--logo"></ion-icon>
+				<p class="site-nav--heading">
+					Borislav.Godumov <span>DEV</span>
+				</p>
+
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>
+			</nav>
+
+			<button class="dropdown-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="dropdown-icon">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+			</svg>
+		</button>
+
+			<nav class="dropdown-nav">
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projects</a></li>
+				</ul>				
+			</nav>
+		</header>
+
+		<section class="hero">
+			<div class="hero-left">
+				<h1 class="hero-heading">Hi, I'm Borislav</h1>
+				<p class="hero-subheading">I'm a <span>Front-End Developer</span> <br> based in Sofia, Bulgaria.</p>
+
+				<div class="contact-icons--wrapper">
+					<a href="https://www.linkedin.com/in/borislav-godumov-7245b61a2/" target="_blank">
+						<ion-icon name="logo-linkedin" class="icon"></ion-icon>
+					</a>
+					<a href="https://github.com/khanark" target="_blank">
+						<ion-icon name="logo-github" class="icon"></ion-icon>
+					</a>
+					<a href="https://www.facebook.com/BeeAyJee" target="_blank">
+						<ion-icon name="logo-facebook" class="icon"></ion-icon>
+					</a>
+					<a href="https://www.instagram.com/alqahol1c/" target="_blank">
+						<ion-icon name="logo-instagram" class="icon"></ion-icon>
+					</a>
+				</div>
+				<a class="btn" 
+				href="./assets/Borislav Godumov CV.pdf"
+				download="Borislav Godumov CV">Take a look at my CV</a>
+			</div>
+			<div class="hero-right">
+				<img src="./assets/Bobby.jpg" alt="hero image">
+			</div>
+		</section>
+
+		<section class="techstack">
+			<h2>Tech Stack</h2>
+			<ul>
+				<i class="devicon-mongodb-plain-wordmark"></i>
+				<i class="devicon-express-original"></i>
+				<i class="devicon-nodejs-plain"></i>
+				<i class="devicon-react-original-wordmark"></i>
+				<i class="devicon-typescript-plain"></i>
+				<i class="devicon-redux-original"></i>
+        <i class="devicon-tailwindcss-plain"></i>
+				<i class="devicon-html5-plain-wordmark"></i>
+				<i class="devicon-css3-plain-wordmark"></i>
+			</ul>
+		</section>
+
+		<section id="about" class="about">
+			<h3 class="subheading">About Me</h3>
+			<div class="introduction">
+				<h2 class="introduction-heading">Passion</h2>
+				<p class="paragraph">
+					From a young age, I have been captivated by computers and development, and this passion has grown into a driving force that fuels my desire to make a meaningful impact through my work.
+				</p>
+			</div>
+			<div class="introduction reverse-columns">
+				<h2 class="introduction-heading">Dedication</h2>
+				<p class="paragraph">
+					I believe that the developer / programmer has the power to shape the world we live in, and I am dedicated to contributing my skills, knowledge, and expertise to create positive change.
+				</p>
+			</div>
+			<div class="introduction">
+				<h2 class="introduction-heading">Communication</h2>
+				<p class="paragraph">
+					Effective communication is essential in the field of web development. I possess strong interpersonal skills, which enable me to collaborate with clients, designers, and fellow developers.
+				</p>
+			</div>
+			<div class="introduction reverse-columns">
+				<h2 class="introduction-heading">Adaptability</h2>
+				<p class="paragraph">
+					As a junior web developer, I am accustomed to working in dynamic and fast-paced environments. I am adaptable and quick to learn new concepts and technologies.
+				</p>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<h3 class="subheading">Projects</h3>
+			<div class="projects-wrapper">
+				<div class="project">
+					<div class="project-image">
+						<img src="./assets/maick-maciel-_v8C6BlpBzY-unsplash.jpg" alt="project image">
+					</div>
+					<div class="project-info">
+						<h4 class="project-name">Dance Guide</h4>
+						<p class="paragraph project-description">Platform that
+							celebrates the art of dance and serves as a valuable resource for dancers of all backgrounds. Whether
+							someone is seeking inspiration, knowledge, or connections within the dance community.</p>
+						<div class="project-links">
+							<a href="#" class="project-link">Visit the App</a> / <a href="#" class="project-link">Browse Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

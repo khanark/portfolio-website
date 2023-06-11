@@ -1,0 +1,132 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: radial-gradient(
+    circle at center,
+    rgba(71, 85, 105, 0.8) 0%,
+    rgba(6, 182, 212, 0) 50%,
+    rgba(6, 182, 212, 0) 100%
+  );
+  background-size: 900px 1200px;
+  background-repeat: no-repeat;
+  background-position: 50% 20rem;
+  animation: moveGradient 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  position: relative;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  filter: grayscale(100%) contrast(2.3) brightness(0.85) blur(10px);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: filter 0.3s ease;
+  animation: moveImage 1200ms ease forwards;
+  animation-delay: 1s;
+}
+
+.hero-heading {
+  color: white;
+  font-size: 4.4rem;
+  opacity: 0;
+  filter: blur(20px);
+  animation: moveText 1s ease-in-out forwards;
+  animation-delay: 1.4s;
+}
+
+.hero-subheading {
+  font-size: 1.8rem;
+  max-width: 450px;
+  margin-bottom: 2.4rem;
+  opacity: 0;
+  filter: blur(20px);
+  animation: moveText 1s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+
+.hero-subheading span {
+  font-size: 2.4rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #06b6d4, #c2e0e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-icons--wrapper {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact-icons--wrapper > * {
+  opacity: 0;
+  animation: moveIcons 1s ease forwards;
+}
+
+.contact-icons--wrapper :nth-child(1) {
+  animation-delay: 2.2s;
+}
+.contact-icons--wrapper :nth-child(2) {
+  animation-delay: 2.4s;
+}
+.contact-icons--wrapper :nth-child(3) {
+  animation-delay: 2.6s;
+}
+.contact-icons--wrapper :nth-child(4) {
+  animation-delay: 2.8s;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 50% 20rem;
+  }
+  100% {
+    background-position: 50% -10rem;
+  }
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: grayscale(100%) contrast(2.3) brightness(0.85) blur(0.5px);
+    transform: translateX(auto);
+  }
+}
+
+@keyframes moveText {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(auto);
+  }
+}
+
+@keyframes moveIcons {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(auto);
+  }
+}

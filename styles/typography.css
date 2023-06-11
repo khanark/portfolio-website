@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html {
+  font: 62.05%/1.5 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body,
+form,
+input {
+  font-size: 1.6rem;
+}
