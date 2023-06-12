@@ -10,7 +10,7 @@
   position: relative;
   text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.6rem;
   color: rgba(255, 255, 255, 0.6);
   text-shadow: 0 0 5px #000;
 }
@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.4rem;
+  gap: 3.6rem;
 }
 
 .techstack ul > * {

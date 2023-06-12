@@ -45,20 +45,22 @@
   filter: blur(20px);
   animation: moveText 1s ease-in-out forwards;
   animation-delay: 1.4s;
+  margin-bottom: 1.6rem;
 }
 
 .hero-subheading {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   max-width: 450px;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
   opacity: 0;
   filter: blur(20px);
   animation: moveText 1s ease-in-out forwards;
   animation-delay: 1.8s;
+  line-height: 1.35;
 }
 
 .hero-subheading span {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   background: linear-gradient(to right, #06b6d4, #c2e0e9);
   -webkit-background-clip: text;
@@ -68,7 +70,7 @@
 .contact-icons--wrapper {
   display: flex;
   gap: 1.6rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.6rem;
 }
 
 .contact-icons--wrapper > * {
