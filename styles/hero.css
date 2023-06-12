@@ -18,6 +18,7 @@
 
 .hero-right {
   display: flex;
+  overflow: hidden;
   align-items: center;
   width: 300px;
   height: auto;
