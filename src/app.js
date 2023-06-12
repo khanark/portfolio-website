@@ -12,8 +12,9 @@ const dropDownNav = document.querySelector('.dropdown-nav');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
-      entry.target.classList.add('project-animation');
-      if (entry.isIntersecting) observer.unobserve(entry.target);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('project-animation');
+      }
     },
     {
       root: document.querySelector('#about'),
