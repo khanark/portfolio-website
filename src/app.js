@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   dropDownBtn.addEventListener('click', () => {
     const dropDownNav = document.querySelector('.dropdown-nav');
     const header = document.querySelector('.site-header');
-    console.log(dropDownNav);
 
     dropDownNav.classList.toggle('show');
+    dropDownNav.classList.toggle('dropdown-animation');
+    console.log(dropDownNav);
     header.classList.toggle('overflow');
   });
 });
