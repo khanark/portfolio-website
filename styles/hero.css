@@ -14,6 +14,7 @@
   background-position: 50% 20rem;
   animation: moveGradient 1s ease forwards;
   animation-delay: 1.5s;
+  padding: 9.6rem 0;
 }
 
 .hero-right {

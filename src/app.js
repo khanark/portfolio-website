@@ -1,6 +1,7 @@
 // ********** element selectors **********
 const header = document.querySelector('.site-header');
 const introduction = document.querySelectorAll('.introduction');
+const projects = document.querySelectorAll('.projects-wrapper');
 console.log(introduction);
 const projectSection = document.querySelector('.projects');
 console.log(projectSection);
@@ -13,12 +14,12 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('project-animation');
+        entry.target.classList.add('introduction-animation');
       }
     },
     {
-      root: document.querySelector('#about'),
-      rootMargin: '-100px',
+      root: document.querySelector('.about'),
+      treshold: 0.5,
     }
   );
 });
@@ -28,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // open the dropdown menu when you click on the button
   dropDownBtn.addEventListener('click', onDropDownBtnClick);
 
-  introduction.forEach((section) => {
-    observer.observe(section);
+  introduction.forEach((quality) => {
+    observer.observe(quality);
   });
 
-  observer.observe(projectSection);
+  // observer.observe(projectSection);
 
   // close the dropdown menu when you click outside of it
   document.addEventListener('click', onDocumentClick);
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ********** functions **********
 function onDocumentClick(e) {
-  console.log(e.currentTarget.className);
+  console.log(e.target.className);
   const className = e.target.nodeName;
 
   if (className !== 'svg' && className !== 'BUTTON' && className !== 'nav') {
