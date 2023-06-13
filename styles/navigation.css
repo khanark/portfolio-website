@@ -1,8 +1,8 @@
 .site-header {
-  min-height: 0;
+  overflow: hidden;
+  max-height: 0;
   position: relative;
   display: flex;
-  overflow: hidden;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -119,6 +119,10 @@
 }
 
 @keyframes dropNavigationFromTop {
+  0% {
+    display: flex;
+    min-height: 0;
+  }
   100% {
     display: flex;
     min-height: 6.2rem;

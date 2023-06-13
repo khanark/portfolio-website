@@ -9,7 +9,7 @@ const dropDownBtn = document.querySelector('.dropdown-btn');
 const downloadBtn = document.querySelector('.btn');
 const dropDownNav = document.querySelector('.dropdown-nav');
 
-// finish the observer when you have time
+// ********** intersection observer **********
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
@@ -29,11 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // open the dropdown menu when you click on the button
   dropDownBtn.addEventListener('click', onDropDownBtnClick);
 
+  // animate the introduction section when it is in the viewport
   introduction.forEach((quality) => {
     observer.observe(quality);
   });
-
-  // observer.observe(projectSection);
 
   // close the dropdown menu when you click outside of it
   document.addEventListener('click', onDocumentClick);
