@@ -1,7 +1,7 @@
 # portfolio-website
 
 Portfolio website with VanillaJS, CSS, HTML
-Link to the website: https://joshuajadaniel.github.io/portfolio-website/
+Link to the website: https://lavacoder.netlify.app/
 
 ## Description
 
