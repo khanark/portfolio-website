@@ -1,13 +1,20 @@
 .site-header {
   overflow: hidden;
   max-height: 0;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   animation: dropNavigationFromTop 0.5s ease-in-out 0.5s forwards;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(10px);
 }
 
 .overflow {
@@ -134,6 +141,15 @@
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 1 !important;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1 !important;
   }
 }
