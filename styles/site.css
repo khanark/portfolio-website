@@ -6,6 +6,7 @@
 @import './projects.css';
 @import './queries.css';
 @import './about.css';
+@import './certificates.css';
 
 :root {
   --clr-primary: rgb(8, 145, 178);

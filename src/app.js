@@ -2,9 +2,7 @@
 const header = document.querySelector('.site-header');
 const introduction = document.querySelectorAll('.introduction');
 const projects = document.querySelectorAll('.projects-wrapper');
-console.log(introduction);
 const projectSection = document.querySelector('.projects');
-console.log(projectSection);
 const dropDownBtn = document.querySelector('.dropdown-btn');
 const downloadBtn = document.querySelector('.btn');
 const dropDownNav = document.querySelector('.dropdown-nav');
